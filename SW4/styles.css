@@ -1,0 +1,142 @@
+/* ====== ESTILO GENERAL WAKFU ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ====== ENCABEZADO ====== */
+.site-header {
+  background-color: #41c9ff;
+  color: #000000;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.sub {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ====== NAVEGACIÓN ====== */
+.main-nav a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  background-color: #3bbbf6;
+}
+
+/* ====== CONTENIDO ====== */
+.hero {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.hero ul {
+  text-align: left;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #2bc3ff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+/* ====== TARJETAS ====== */
+.card {
+  background: rgb(82, 166, 199);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ====== PIE DE PÁGINA ====== */
+.site-footer {
+  background-color: #44aada;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #46c4c4;
+  margin-top: 15px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personajes · Wakfu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Texto con sombra y color wakfu */
+    h2, p, .note, h1 {
+      color: #e6f0ff;
+      text-shadow: 1px 1px 2px #20e5ff;
+    }
+
+    /* Estilo de tarjetas de personajes */
+    .personajes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .personaje-card {
+      background: rgba(30, 58, 138, 0.7);
+      border-radius: 12px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .personaje-card img {
+      width: 100%;
+      height: 250px; /* mismo tamaño para todas */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .personaje-card p {
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.jpg" alt="Logo Wakfu" class="logo"/>
+        <div>
+          <h1>Personajes Principales</h1>
+          <p class="sub">Héroes del Mundo de los Doce</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html" class="active">Personajes</a>
+        <a href="pagina2.html">Razas</a>
+        <a href="pagina3.html">Historia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Yugo y sus compañeros</h2>
+    
+    <div class="personajes">
+      <div class="personaje-card">
+        <img src="yugoo.jpg" alt="Yugo">
+        <h3>Yugo</h3>
+        <p>Un joven Eliatrope con la habilidad de crear portales, líder del grupo y protector del Wakfu.</p>
+      </div>
+
+      <div class="personaje-card">
+        <img src="evaa.jpg" alt="Evangelyne">
+        <h3>Evangelyne</h3>
+        <p>Arquera Ocra de gran puntería, protectora del grupo y guía táctica en las aventuras.</p>
+      </div>
+
+      <div class="personaje-card">
+        <img src="pinpan.jpg" alt="Tristepin">
+        <h3>Tristepin</h3>
+        <p> Un Guerrero  iop valiente y leal, siempre dispuesto a sacrificarse por sus amigos.</p>
+      </div>
+
+      <div class="personaje-card">
+        <img src="amalia.jpg" alt="Amalia">
+        <h3>Amalia</h3>
+        <p>Princesa Sadida, con la habilidad de controlar plantas y proteger la naturaleza del Mundo de los Doce.</p>
+      </div>
+
+      <div class="personaje-card">
+        <img src="ruel.jpg" alt="Ruel">
+        <h3>Ruel</h3>
+        <p>Anciano Ogrest amante del dinero y la comida, aporta humor y experiencia al grupo.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small>SW4</small></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

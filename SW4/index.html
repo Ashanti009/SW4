@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wakfu · Examen SW4</title>
+  <link rel="stylesheet" href="styles.css" />
+    <style>
+  
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      filter: brightness(35%) saturate(120%);
+    }
+
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.349);
+      z-index: -1;
+      backdrop-filter: blur(2px);
+    }
+
+    main, header, footer {
+      position: relative;
+      z-index: 2;
+    }
+
+    h2, p, .note {
+      color: #e6f0ff;
+      text-shadow: 1px 1px 2px #20e5ff;
+    }
+       h3, li, .note {
+      color: #e6f0ff;
+      text-shadow: 1px 1px 2px #20e5ff;
+    }
+
+
+    .site-header {
+      background: rgba(3, 217, 255, 0.8);
+      box-shadow: none;
+    }
+
+    .site-footer {
+      background: rgba(17, 227, 255, 0.85);
+    }
+  </style>
+</head>
+<body>
+      <!-- VIDEO DE FONDO -->
+  <video autoplay muted loop class="video-bg">
+    <source src="wakfuvideo.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5.
+  </video>
+  <div class="overlay"></div>
+ 
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.jpg" alt="Logo Wakfu" class="logo"/>
+        <div>
+          <h1>WAKFU — Práctica SW4</h1>
+          <p class="sub">Nombre: <strong>Leila Ashanti Blanco Torres</strong> — Matrícula: <strong>22307070</strong></p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="pagina1.html">Personajes</a>
+        <a href="pagina2.html">Razas</a>
+        <a href="pagina3.html">Historia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bienvenido al Mundo de Wakfu</h2>
+      <img src="wakfu_intro.jpg" alt="Mundo de Wakfu" style="max-width:100%;border-radius:10px;margin-top:10px">
+      <p>
+        <strong>Wakfu</strong> es una serie animada francesa producida por Ankama.  
+        Se desarrolla en el <em>Mundo de los Doce</em>, un universo lleno de magia, razas únicas y aventuras épicas.  
+        La historia sigue a <strong>Yugo</strong>, un joven Eliatrope con poderes extraordinarios, que junto a sus amigos viaja en busca de sus orígenes y del equilibrio del mundo.
+           <img src="Wakfu_intro.webp" alt="Wakfu grupo principal">
+      </p>
+
+      <h3>Datos relevantes:</h3>
+      <ul>
+        <li>País de origen: Francia (Ankama Animation)</li>
+        <li>Género: Fantasía, aventura, comedia</li>
+        <li>Estreno: 2008</li>
+        <li>Plataforma: Netflix y streaming oficial de Ankama</li>
+      </ul>
+
+      <div class="controls">
+        <button id="btnPermiso">Pedir permiso de notificaciones</button>
+        <button id="btnProbarNoti">Enviar notificación (Wakfu)</button>
+      </div>
+
+      <p class="note">Este proyecto implementa un <strong>Service Worker</strong> con caché dinámico, estrategia <strong>network-first</strong> y notificaciones locales.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>SW4 — Wakfu</small>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

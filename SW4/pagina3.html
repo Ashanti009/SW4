@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Historia · Wakfu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    h1, h2, h3, p, .note {
+      color: #e6f0ff;
+      text-shadow: 1px 1px 2px #20e5ff;
+    }
+
+    /* Imagen principal centrada */
+    .img-center {
+      display: block;
+      margin: 20px auto;
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    /* Contenedor para texto a la izquierda y imagen a la derecha */
+    .text-img-right {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .text-img-right .texto {
+      flex: 1 1 60%;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .text-img-right img {
+      flex: 0 0 300px;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 768px) {
+      /* En móviles apilar texto e imagen */
+      .text-img-right {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-img-right .texto {
+        flex: 1 1 100%;
+      }
+
+      .text-img-right img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.jpg" alt="Logo Wakfu" class="logo"/>
+        <div>
+          <h1>Historia de Wakfu</h1>
+          <p class="sub">El viaje de Yugo y sus amigos</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Personajes</a>
+        <a href="pagina2.html">Razas</a>
+        <a href="pagina3.html" class="active">Historia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>La historia del despertar del Wakfu</h2>
+    <img src="wakfu.jpg" alt="Historia de Wakfu" class="img-center" />
+
+    <!-- Texto a la izquierda y portada a la derecha -->
+    <div class="text-img-right">
+      <div class="texto">
+        <p>
+          Wakfu es una serie animada francesa creada por Ankama, basada en el universo del videojuego Dofus. La historia se desarrolla en el Mundo de los Doce, un universo mágico lleno de criaturas, héroes y civilizaciones diversas, donde la energía vital conocida como Wakfu mantiene el equilibrio entre todas las cosas.
+        </p>
+        <p>
+          La serie sigue las aventuras de Yugo, un joven Eliatrope con la capacidad de crear portales que conectan distintos lugares instantáneamente. Desde muy pequeño, Yugo busca descubrir sus orígenes, ya que es huérfano y posee un poder excepcional que lo hace único. Durante su viaje, conoce a un grupo de amigos que se convierten en su familia y compañeros de aventura.
+        </p>
+        <p>
+          A lo largo de la serie, Yugo y sus amigos se enfrentan a numerosos enemigos y desafíos, desde malvados que buscan controlar el Wakfu hasta criaturas mágicas que amenazan la paz del mundo. Cada aventura permite descubrir más sobre la historia, la magia y las leyendas de este universo.
+        </p>
+        <p>
+          Uno de los elementos centrales de Wakfu es la energía mágica llamada Wakfu, que fluye a través de todo el mundo. Los personajes deben aprender a respetarla y protegerla, ya que un desequilibrio puede causar desastres naturales o conflictos entre razas. La serie combina magia, acción, humor y valores como la amistad, la lealtad y el sacrificio, creando un mundo rico en narrativa y estética visual.
+        </p>
+        <p>
+          Además, Wakfu profundiza en la diversidad de razas y culturas, mostrando sus tradiciones, fortalezas y debilidades. Por ejemplo, los Eliatropes son exploradores y guardianes del equilibrio; los Iops, guerreros valientes; los Sadidas, protectores de la naturaleza; y los Enutrofs, expertos en encontrar tesoros y secretos del pasado.
+        </p>
+        <p>
+          La historia de Wakfu también toca temas emocionales y filosóficos, como la búsqueda de identidad, el valor de la familia y la responsabilidad que conlleva tener poderes extraordinarios. Cada arco de la serie combina aventuras épicas con lecciones de vida, haciendo que tanto jóvenes como adultos disfruten de su narrativa.
+        </p>
+      </div>
+      <img src="portada.jpg" alt="Historia de Wakfu" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small> SW4</small></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
